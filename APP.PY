@@ -3,8 +3,14 @@
 import SimpleHTTPServer
 import SocketServer
  
+
+
+
 PORT = 8201
- 
+
+print "Programa Inicializado"
+
+
 class my_handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
    def do_GET(self):
       self.send_response(200)
