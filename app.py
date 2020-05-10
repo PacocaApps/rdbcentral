@@ -3,7 +3,20 @@ from flask import Flask
 import socket         
 
 app = Flask(__name__)
+
+
+
+
 print("first part app running")
+
+if __name__ == '__main__':
+    # Bind to PORT if defined, otherwise default to 5000.
+    print("if1 running")
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+    print("if running")
+
+
 print("second app part running")
 s = socket.socket()          
     
@@ -41,13 +54,8 @@ while True:
   
    # Close the connection with the client 
    c.close() 
-   
-if __name__ == '__main__':
-    # Bind to PORT if defined, otherwise default to 5000.
-    print("if1 running")
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
-    print("if running")
+
+
 
 
 @app.route('/')
