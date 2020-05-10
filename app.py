@@ -24,7 +24,7 @@ while True:
  print ('Got connection from', addr)
   
    # send a thank you message to the client.  
- c.send(10) 
+ c.send('Thank you for connecting'.encode() )
   
    # Close the connection with the client 
  c.close() 
