@@ -3,21 +3,23 @@ from flask import Flask
 import socket         
 
 app = Flask(__name__)
-
+print("first part app running")
 @app.route('/')
 def hello():
+    print("hello running")
     return 'Sever Running!'
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+    print("if running")
     
       
 # print ("socket binded to %s", %(port) )
   
 
-
+print("second app part running")
 s = socket.socket()          
     
 s.bind(('', port))   
