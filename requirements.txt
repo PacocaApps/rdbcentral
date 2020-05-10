@@ -4,8 +4,8 @@
 # wsgiref==0.1.2
 Flask
 Jinja2
-# Werkzeug
-socket
+Werkzeug
+
 # logging
 # redis
 # gevent
