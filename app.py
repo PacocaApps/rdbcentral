@@ -15,7 +15,7 @@ if __name__ == '__main__':
     
     
 s.bind(('', port))         
-print ("socket binded to %s", %(port) )
+# print ("socket binded to %s", %(port) )
   
 
 
