@@ -13,15 +13,13 @@ if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     print("if1 running")
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
-    print("if running")
 
 
-print("second app part running")
-s = socket.socket()          
+    print("second app part running")
+    s = socket.socket()          
     
-s.bind(('', port))   
-print ("Socket successfully created")
+    s.bind(('', port))   
+    print ("Socket successfully created")
 # first of all import the socket library 
        
   
@@ -38,22 +36,29 @@ print ("Socket successfully created")
 # coming from other computers on the network 
 
 # put the socket into listening mode 
-s.listen(5)      
-print ("socket is listening")           
+   s.listen(5)      
+   print ("socket is listening")           
   
 # a forever loop until we interrupt it or  
 # an error occurs 
-while True: 
+   while True: 
   
    # Establish connection with client. 
-   c, addr = s.accept()      
-   print ('Got connection from', addr)
+     c, addr = s.accept()      
+     print ('Got connection from', addr)
   
    # send a thank you message to the client.  
-   c.send('Thank you for connecting') 
+     c.send('Thank you for connecting') 
   
    # Close the connection with the client 
-   c.close() 
+     c.close() 
+
+
+
+    app.run(host='0.0.0.0', port=port)
+    print("if running")
+
+
 
 
 
