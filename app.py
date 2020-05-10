@@ -13,13 +13,14 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
     
-    
-s.bind(('', port))         
+      
 # print ("socket binded to %s", %(port) )
   
 
 
 s = socket.socket()          
+    
+s.bind(('', port))   
 print ("Socket successfully created")
 # first of all import the socket library 
        
