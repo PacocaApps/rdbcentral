@@ -5,6 +5,7 @@
 Flask
 Jinja2
 Werkzeug
+socket
 # logging
-redis
-gevent
+# redis
+# gevent
