@@ -20,27 +20,27 @@ if __name__ == '__main__':
     
     s.bind(('', port))   
     print ("Socket successfully created")
-# first of all import the socket library 
+   # first of all import the socket library 
        
   
-# next create a socket object 
+    # next create a socket object 
 
   
-# reserve a port on your computer in our 
-# case it is 12345 but it can be anything 
+  # reserve a port on your computer in our 
+   # case it is 12345 but it can be anything 
   
-# Next bind to the port 
-# we have not typed any ip in the ip field 
-# instead we have inputted an empty string 
-# this makes the server listen to requests  
-# coming from other computers on the network 
+ # Next bind to the port 
+   # we have not typed any ip in the ip field 
+ # instead we have inputted an empty string 
+ # this makes the server listen to requests  
+ # coming from other computers on the network 
 
-# put the socket into listening mode 
+ # put the socket into listening mode 
    s.listen(5)      
    print ("socket is listening")           
   
-# a forever loop until we interrupt it or  
-# an error occurs 
+ # a forever loop until we interrupt it or  
+ # an error occurs 
    while True: 
   
    # Establish connection with client. 
