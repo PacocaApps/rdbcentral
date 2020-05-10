@@ -41,20 +41,21 @@ while True:
   
    # Close the connection with the client 
    c.close() 
-
-
    
-@app.route('/')
-def hello():
-    print("hello running")
-    return 'Sever Running!'
-
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     print("if1 running")
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
     print("if running")
+
+
+@app.route('/')
+def hello():
+    print("hello running")
+    return 'Sever Running!'
+
+
     
       
 # print ("socket binded to %s", %(port) )
