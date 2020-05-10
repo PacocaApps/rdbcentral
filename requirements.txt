@@ -1,2 +1,2 @@
-SimpleHTTPServer==20.19.0
-SocketServer==20.17.0
+# SimpleHTTPServer==20.19.0
+# SocketServer==20.17.0
