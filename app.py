@@ -11,7 +11,7 @@ s = socket.socket()
 s.bind(('', PORT1))   
 print ("Socket successfully created")
 print ("socket binded to", PORT1)
-  
+print("HOSTNAME: ",socket.gethostname())  
 # first of all import the socket library 
 
 s.listen(5)      
@@ -26,7 +26,7 @@ while True:
  print ('Got connection from', addr)
   
    # send a thank you message to the client.  
- c.send('Thank you for connecting'.encode() )
+ c.send('Conection Completed Succefully'.encode() )
   
    # Close the connection with the client 
  c.close() 
