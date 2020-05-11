@@ -12,7 +12,8 @@ s.bind(('', PORT1))
 print ("Socket successfully created")
 print ("socket binded to", PORT1)
 print("HOSTNAME: ",socket.gethostname())  
-print("Name HOSTNAME IP", socket.gethostbyname(socket.gethostname() )
+print("Name HOSTNAME IP", socket.gethostbyname(socket.gethostname()))
+
 # first of all import the socket library 
 
 s.listen(5)      
