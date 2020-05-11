@@ -10,6 +10,8 @@ s = socket.socket()
     
 s.bind(('', PORT1))   
 print ("Socket successfully created")
+print ("socket binded to", PORT1)
+  
 # first of all import the socket library 
 
 s.listen(5)      
