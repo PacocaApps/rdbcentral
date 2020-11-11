@@ -1,14 +1,5 @@
-import os
-from flask import Flask
-import socket         
-
-
-
-
-  
-
 import re
-COUNT = 1
+COUNT = 0
 
 def updateCount():
     fin = open(__file__, 'r')
